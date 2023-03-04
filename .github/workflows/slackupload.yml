@@ -40,9 +40,6 @@ jobs:
         slack-message: "GitHub build result"
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-    - name: Checkout
-      uses: actions/checkout@v3
-    - run: echo "Test file " > test.txt
     - name: Upload to slack step
       uses: adrey/slack-file-upload-action@master
       with:
