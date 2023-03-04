@@ -45,5 +45,5 @@ jobs:
       uses: adrey/slack-file-upload-action@master
       with:
         token: ${{ secrets.SLACK_BOT_TOKEN }}
-        path: data.xlsx
+        path: ///home/runner/work/SlackIntegration_CSV/SlackIntegration_CSV/report.html
         channel: random
